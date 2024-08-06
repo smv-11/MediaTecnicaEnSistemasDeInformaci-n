@@ -1,0 +1,1 @@
+# MediaTecnicaEnSistemasDeInformaci-n
