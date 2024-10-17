@@ -1,0 +1,74 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+
+class HelloWorld {
+    public static void main(String[] args) {
+        
+        //Enteras
+        int entera = 15;
+        System.out.println("El rango de un entero es negativo 2,147,483,648 a 2,147,483,648");
+        System.out.println("Ejemplo deLa variable es: " + entera);
+        Integer entero;
+        System.out.println(" ");
+        
+    
+        long enteroGrande = 1350;
+        Long enteroGrandeObject;
+        System.out.println("El rango de un long es negativo 9,223,372,036,854,775,808 a 9,223,372,036,854,775,807");
+         System.out.println("Ejemplo de la variable es: " + enteroGrande);
+    
+        System.out.println(" ");
+        
+        short enteroPequeno = 12;
+        Short enteroPequenoObject;
+        System.out.println("El rango de un short es 32.768 negativo a 32.767 positivo.");
+        System.out.println("Ejemplo de la variable es: " + enteroPequeno);
+        System.out.println(" ");
+        
+        byte enteroMuyPequeno = 20;
+        Byte enteroMuyPequenoObject;
+        System.out.println("El rango de un byte es 128 negativo a 127 positivo");
+        System.out.println("Ejemplo de la variable es: " + enteroMuyPequeno);
+        System.out.println(" ");
+        
+        //Bolean
+        boolean bool = true;
+        Boolean booleanObject;
+        System.out.println("El rango de un booleano solo es Verdadero - Falso");
+        System.out.println("Ejemplo de la variable es: " + bool);
+        System.out.println(" ");
+        
+        
+        //Decimal 
+        float decimal = 39;
+        Float decimalObject;
+        System.out.println("El rango de un float es 1.4e-045 a 3.4e+038");
+        System.out.println("Ejemplo de la variable es: " + decimal);
+        System.out.println(" ");
+        
+        
+        double decimal2 = 312.3045;
+        Double decimal2Object;
+        System.out.println("El rango de un double es 4.9e-324 a 8e+308");
+        System.out.println("Ejemplo de variable es: " + decimal2);
+        System.out.println(" ");
+        
+        
+        //cadena de caracteres 
+        String cadena = "Hola Mundo"; 
+        System.out.println("El string puede imprimir cadenas de palabras");
+        System.out.println(" ");
+        
+        
+    
+        //caracter
+        char caracter = '&';
+        System.out.println("El char puede tener un simbolo, una letra o una valor numerico que represente una letra");
+        System.out.println("Ejemplo de variable es: " + caracter);
+        System.out.println(" ");
+        
+        //Object
+        Object objeto;
+        System.out.println("El objeto puede almacenar de cualquier tipo de dato, dependiendo a la que se adapte el objeto en si");
+    }
+}
