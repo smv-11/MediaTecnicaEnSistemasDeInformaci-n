@@ -1,0 +1,121 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+// EJEMPLO 1
+import java.util.Scanner;
+
+class HelloWorld {
+    public static void main(String[] args) {
+        Scanner teclado = new Scanner(System.in);
+        System.out.print("Escribe una palabra: ");
+        String texto = teclado.nextLine();
+        
+        if (texto.equals("hola")) {
+            System.out.println("Hola Mundo");
+        } else  {
+            System.out.println("Se merece un 5.0 por ser la mejor secretaria");
+        }
+    }
+}
+
+---------------------------------------------------------------------------------
+
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+// EJEMPLO 2
+import java.util.Scanner;
+
+class HelloWorld {
+    public static void main(String[] args) {
+        Scanner teclado = new Scanner(System.in);
+        System.out.print("Escribe un numero: ");
+        int x;
+        
+     do {
+         x = teclado.nextInt();
+        if(x > 0){
+            System.out.print("Numero positivo");
+     }
+     else{
+         System.out.print("Fin del programa");
+     }
+     }while (x >=0);
+}
+}
+
+---------------------------------------------------------------------------------
+
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+// EJEMPLO 3
+import java.util.Scanner;
+
+class HelloWorld {
+    public static void main(String[] args) {
+        Scanner teclado = new Scanner(System.in);
+        System.out.print("Escribe un numero: ");
+        int x = teclado.nextInt();
+        if(x >0){
+            System.out.print("El numero es positivo:");
+        }
+        
+        while (x >=0) {
+            x= teclado.nextInt();
+             if(x >=0){
+                 System.out.println("Numero positivo");
+                 
+             }
+         else  {
+             System.out.println("Numero negativo");
+            
+        }
+        }while (x >=0);
+      
+    }
+}
+
+---------------------------------------------------------------------------------
+
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+// EJEMPLO 4
+import java.util.Scanner;
+
+class HelloWorld {
+    public static void main(String[] args) {
+        
+        Scanner teclado = new Scanner(System.in);
+        
+        int x;
+        do{
+            System.out.print("Escribe un numero: ");
+             x = teclado.nextInt();
+              if(x >=0){
+            System.out.println("El numero es positivo");
+        }
+        
+        else {
+                 System.out.println("Fin del programa");
+            }
+        }while (x >=0);    
+        
+    }
+}
+
+---------------------------------------------------------------------------------
+
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+// EJEMPLO 5
+import java.util.Scanner;
+
+class HelloWorld {
+    public static void main(String[] args) {
+        Scanner teclado = new Scanner(System.in);
+        
+        System.out.print("Escribe el numero de veces que quieres que se repita: ");
+        int x = teclado.nextInt();
+        for (int i = 1; i <= x; i++){
+            System.out.println(i);
+        }
+    }
+}
