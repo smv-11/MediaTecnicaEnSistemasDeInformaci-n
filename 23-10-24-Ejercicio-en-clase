@@ -1,0 +1,59 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+// EJEMPLO 7
+import java.util.Scanner;
+class HelloWorld {
+    public static void main(String[] args) {
+        
+        Scanner teclado = new Scanner(System.in);
+        int tamano;
+        
+        do {
+          System.out.print("Ingrese un numero de estudiantes: ");
+          tamano = teclado.nextInt();
+          teclado.nextLine();
+          System.out.println(" ");
+        if (tamano <= 0) {
+            System.out.println("El numero no es valido, intente nuevamente.");
+            System.out.println(" ");
+        }
+        }while (tamano <=0);
+    
+            String[] nombres = new String[tamano]; 
+            String[] apellidos = new String[tamano];
+            double[][] notas = new double[tamano][3];
+            
+        
+        for (int i = 0; i < nombres.length; i++) {
+            System.out.print("Ingrese el nombre " + (i + 1 ) + ": ");
+            nombres[i] = teclado.nextLine();
+            
+            System.out.print("Ingrese el apellido " + (i + 1) + ": ");
+            apellidos[i] = teclado.nextLine();
+            
+            System.out.println("Ingrese las notas ");
+            
+        for(int j = 0; j < notas[i].length; j++) {
+            System.out.print("Nota numero " + (j+1) + ": ");
+            notas[i][j] = teclado.nextDouble();
+            teclado.nextLine();
+        }
+            System.out.println("-----------------------------");
+        }
+        System.out.println("Los nombres y apellidos que ingresaste son:");
+        System.out.println(" ");
+        double notaDefinitiva;
+        for (int i = 0; i <nombres.length; i++) {
+            notaDefinitiva = 0;
+            System.out.println("Estudiante numero " + (i + 1) + ": " + nombres[i] + (" ") + apellidos[i]);
+        for (int j = 0; j < notas[i].length; j++){
+            System.out.println("Sus notas son: " + notas[i][j]);
+        notaDefinitiva = notaDefinitiva + notas[i][j];
+        }
+        notaDefinitiva = notaDefinitiva/3;
+        System.out.println("Nota definitiva:  " + notaDefinitiva);
+        }
+        
+    
+    }
+}
